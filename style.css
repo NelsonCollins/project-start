@@ -1,5 +1,6 @@
 body{
     margin: auto 0;
+    font-family: Arial;
 }
 
 
@@ -25,14 +26,30 @@ body{
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform:rotate(7deg); 
+    -moz-transform:rotate(7deg); 
+    -o-transform:rotate(7deg); 
+    transform:rotate(7deg); 
+}
 
 /*NAV BAR*/
+
+.sticky{
+    
+    position: fixed;
+    top:0; 
+    width: 100%;
+}
+
 .main-nav{
     display: flex;
     list-style: none;
     font-size: 0.7em;
     margin: 0;
 }
+
+
 
 @media only screen and (max-width: 600px){
     .main-nav{
@@ -62,7 +79,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 60vh;
+}
+
+.cover{
+    width: 20rem;
 }
 
 /*GRID*/
